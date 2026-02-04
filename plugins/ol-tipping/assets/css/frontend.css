@@ -1,0 +1,142 @@
+/* Frontend Styles */
+
+.ol-tipping-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0;
+}
+
+.ol-tipping-container h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.ol-countdown {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ol-countdown p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ol-tipping-positions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.ol-tipping-position {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.ol-tipping-position label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.ol-athlete-select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.ol-deadline-passed {
+    background: rgba(255, 200, 0, 0.2);
+    border: 2px solid #ffc800;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Results Table */
+.ol-results-container {
+    margin: 20px 0;
+}
+
+.ol-results-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.ol-results-table th,
+.ol-results-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.ol-results-table th {
+    background-color: #667eea;
+    color: white;
+    font-weight: bold;
+}
+
+.ol-results-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Leaderboard */
+.ol-leaderboard-container {
+    margin: 20px 0;
+}
+
+.ol-leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.ol-leaderboard-table th,
+.ol-leaderboard-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.ol-leaderboard-table th {
+    background-color: #667eea;
+    color: white;
+    font-weight: bold;
+}
+
+.ol-leaderboard-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.ol-leaderboard-table tr:first-child td {
+    background-color: #fff3cd;
+    font-weight: bold;
+}
+
+.submit {
+    text-align: center;
+}
+
+.button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

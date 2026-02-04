@@ -1,0 +1,549 @@
+/*
+Theme Name: OL Modern
+Theme URI: https://ol-tipping.local
+Description: Moderne tema for OL tippekonkurranse med parallax og fancy effekter
+Version: 1.0.0
+Author: OL Tipping
+Author URI: https://ol-tipping.local
+License: GPL2
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Domain Path: /languages
+Text Domain: ol-modern
+
+This theme is marked as incomplete because it is a child theme, or it requires a parent theme to function properly.
+*/
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f7fa;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.site-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header-logo a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.header-logo a:hover {
+    opacity: 0.9;
+}
+
+/* Navigation */
+.site-navigation {
+    flex: 1;
+    margin: 0 30px;
+}
+
+.primary-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.primary-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.primary-menu a:hover {
+    color: #ffd700;
+}
+
+.primary-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffd700;
+    transition: width 0.3s ease;
+}
+
+.primary-menu a:hover::after {
+    width: 100%;
+}
+
+/* Header User */
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-welcome {
+    font-weight: 500;
+}
+
+.login-link,
+.logout-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.login-link:hover,
+.logout-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Parallax Hero */
+.parallax-hero {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.7) 0%, rgba(118, 75, 162, 0.7) 100%);
+    z-index: 1;
+}
+
+.parallax-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.parallax-hero h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: slideInDown 0.8s ease;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Site Wrapper */
+.site-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Main Content */
+.site-main {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.post-content {
+    margin-bottom: 30px;
+}
+
+.entry-header {
+    margin-bottom: 25px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 15px;
+}
+
+.entry-title {
+    font-size: 36px;
+    color: #333;
+    margin: 0;
+}
+
+.entry-content {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.entry-content p {
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-menu {
+    list-style: none;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #667eea;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Buttons */
+.button,
+input[type="submit"],
+input[type="button"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+/* No Posts Message */
+.no-posts {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.no-posts .entry-title {
+    color: #999;
+}
+
+.no-posts .entry-content {
+    color: #999;
+    font-size: 18px;
+}
+
+/* Pagination */
+.page-links {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.page-links a,
+.page-links span {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 3px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #667eea;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page-links a:hover {
+    background: #667eea;
+    color: white;
+}
+
+.page-links span.page-numbers.current {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .site-navigation {
+        order: 3;
+        flex-basis: 100%;
+        margin: 15px 0;
+    }
+
+    .primary-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .parallax-hero {
+        height: 400px;
+    }
+
+    .parallax-hero h1 {
+        font-size: 36px;
+    }
+
+    .site-main {
+        padding: 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-logo h1 {
+        font-size: 20px;
+    }
+
+    .header-user {
+        order: 2;
+    }
+
+    .site-navigation {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .primary-menu {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .primary-menu li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 0;
+    }
+
+    .primary-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .parallax-hero {
+        height: 300px;
+        background-attachment: scroll;
+    }
+
+    .parallax-hero h1 {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+
+    .entry-title {
+        font-size: 24px;
+    }
+
+    .site-main {
+        padding: 15px;
+    }
+
+    .site-wrapper {
+        padding: 20px 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .button,
+    input[type="submit"],
+    input[type="button"] {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .site-wrapper {
+        padding: 40px;
+    }
+}
+
+@media print {
+    header,
+    footer,
+    .site-navigation {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .site-main {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}

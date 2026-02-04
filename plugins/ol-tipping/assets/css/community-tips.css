@@ -1,0 +1,212 @@
+/* Community Tips Styling */
+
+.ol-community-tips-page {
+    padding: 40px 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+.ol-community-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ol-community-header h1 {
+    font-size: 36px;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.ol-community-header p {
+    color: #666;
+    font-size: 18px;
+}
+
+.ol-community-events {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ol-community-event {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.ol-community-event h2 {
+    font-size: 24px;
+    color: #667eea;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ol-community-event h2::before {
+    content: '🎿';
+}
+
+.ol-tip-count {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.ol-position-tips {
+    margin-bottom: 25px;
+}
+
+.ol-position-heading {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.ol-community-tip {
+    background: #f8f9ff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-left: 4px solid #667eea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ol-tip-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ol-tip-header strong {
+    font-size: 16px;
+    color: #1a1a2e;
+}
+
+.ol-tip-country {
+    background: #e8eaff;
+    color: #667eea;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.ol-tip-user {
+    color: #888;
+    font-size: 14px;
+}
+
+.ol-tip-user strong {
+    color: #555;
+}
+
+.ol-no-tips {
+    text-align: center;
+    padding: 60px;
+    color: #666;
+    font-size: 18px;
+}
+
+.ol-comment-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.ol-comment-section h4 {
+    margin-bottom: 15px;
+    color: #667eea;
+    font-size: 16px;
+}
+
+.ol-comments-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.ol-comment-item {
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 3px solid #667eea;
+}
+
+.ol-comment-author {
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ol-comment-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.ol-comment-text {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.ol-comment-form {
+    margin-top: 15px;
+}
+
+.ol-comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    min-height: 80px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.ol-comment-form textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.ol-comment-submit {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.ol-comment-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
